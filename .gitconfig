@@ -1,0 +1,21 @@
+[http]
+	sslVerify = false
+[user]
+	email = mfridh@ea.com
+	name = Mikael Fridh
+[core]
+	autocrlf = true
+[push]
+	default = simple
+[merge]
+  tool = winmerge
+[mergetool "winmerge"]
+  cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' \"$MERGED\"
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative
+  anchor = tag -f anchor
+  s = status
