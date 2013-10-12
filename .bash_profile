@@ -6,11 +6,11 @@ export GIT_PS1_SHOWDIRTYSTATE GIT_PS1_SHOWUPSTREAM
 # Be able to launch gvim
 vim()
 {
-  "C:/Program Files (x86)/Vim/vim73/vim.exe" "$@"
+  "C:/Program Files (x86)/Vim/vim74/vim.exe" "$@"
 }
 gvim()
 {
-  "C:/Program Files (x86)/Vim/vim73/gvim.exe" "$@"
+  "C:/Program Files (x86)/Vim/vim74/gvim.exe" "$@"
 }
 
 # SSH Agent trickery
