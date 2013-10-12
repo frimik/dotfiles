@@ -61,3 +61,5 @@ else
   fi
 fi
 
+# ls colors
+alias ls='ls --color=auto'
