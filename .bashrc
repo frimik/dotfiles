@@ -68,8 +68,14 @@ elif [ "$OSTYPE" = "linux-gnu" ]; then
   fi
 fi
 
+# Are we in a VM?
+VBOX=$(cat /sys/class/dmi/id/product_name 2>/dev/null)
+if [ "$VBOX" = "VirtualBox" ]; then
+  VIRT_PS1="[$VBOX] "
+fi
+
 # semi-fancy git prompt ...
-export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]\$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] "
+export PS1="$VIRT_PS1\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]\$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] "
 
 # ls colors
 alias ls='ls --color=auto'
