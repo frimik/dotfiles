@@ -16,3 +16,5 @@ if [ -d "$HOME/.rbenv/bin" ]; then
   # Initiate rbenv
   eval "$(rbenv init -)"
 fi
+
+export EDITOR="vim"
