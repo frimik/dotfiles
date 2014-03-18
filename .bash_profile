@@ -7,8 +7,13 @@ fi
 
 # User specific environment and startup programs
 
-# Ruby rbenv:
+# my bin dir:
+if [ -d "$HOME/bin/" ]; then
+  PATH="$HOME/bin:$PATH"
+  export PATH
+fi
 
+# Ruby rbenv:
 if [ -d "$HOME/.rbenv/bin" ]; then
   PATH="$HOME/.rbenv/bin:$PATH"
   export PATH
