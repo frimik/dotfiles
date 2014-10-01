@@ -66,6 +66,8 @@ elif [ "$OSTYPE" = "linux-gnu" ]; then
   if [ -f ~/.bash/git-completion.bash ]; then
     . ~/.bash/git-completion.bash
   fi
+
+  [ -f ~/.bash/aws-completion.bash ] && . ~/.bash/aws-completion.bash
 fi
 
 # Are we in a VM?
