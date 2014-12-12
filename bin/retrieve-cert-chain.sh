@@ -6,4 +6,4 @@ REMHOST=$1
 REMPORT=${2:-443}
 
 echo |\
-openssl s_client -showcerts -connect ${REMHOST}:${REMPORT} 2>/dev/null | grep "^[ ]"
+openssl s_client -showcerts -connect ${REMHOST}:${REMPORT} | grep "^[ ]"
