@@ -69,7 +69,7 @@ elif [ "$OSTYPE" = "linux-gnu" ]; then
 
   [ -f ~/.bash/aws-completion.bash ] && . ~/.bash/aws-completion.bash
 
-  export GOPATH="~/.gopath"
+  export GOPATH="${HOME}/.gopath"
 fi
 
 # Are we in a VM?
