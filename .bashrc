@@ -68,6 +68,8 @@ elif [ "$OSTYPE" = "linux-gnu" ]; then
   fi
 
   [ -f ~/.bash/aws-completion.bash ] && . ~/.bash/aws-completion.bash
+
+  export GOPATH="~/.gopath"
 fi
 
 # Are we in a VM?
