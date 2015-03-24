@@ -13,6 +13,12 @@ if [ -d "$HOME/bin/" ]; then
   export PATH
 fi
 
+# my go bin dir:
+if [ -d "$GOPATH/bin/" ]; then
+  PATH="$GOPATH/bin:$PATH"
+  export PATH
+fi
+
 # Ruby rbenv:
 if [ -d "$HOME/.rbenv/bin" ]; then
   PATH="$HOME/.rbenv/bin:$PATH"
