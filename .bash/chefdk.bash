@@ -1,0 +1,6 @@
+RUBY_VERSION="2.1.0"
+export PATH="${PATH}:${HOME}/.chefdk/gem/ruby/${RUBY_VERSION}/bin:/c/opscode/chefdk/bin:/c/opscode/chefdk/embedded/bin"
+export GEM_ROOT="/c/opscode/chefdk/embedded/lib/ruby/gems/${RUBY_VERSION}"
+export GEM_HOME="${HOME}/.chefdk/gem/ruby/${RUBY_VERSION}"
+export GEM_PATH="${HOME}/.chefdk/gem/ruby/${RUBY_VERSION}:/c/opscode/chefdk/embedded/lib/ruby/gems/${RUBY_VERSION}"
+export CHEFDK_HOME="${HOME}/.chefdk"

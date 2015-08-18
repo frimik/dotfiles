@@ -62,6 +62,9 @@ if [ "$OSTYPE" = "msys" ]; then
     fi
   fi
 
+  # ChefDK
+  [ -f ~/.bash/chefdk.bash ] && . ~/.bash/chefdk.bash
+
 elif [ "$OSTYPE" = "linux-gnu" ]; then
   if [ -f ~/.bash/git-completion.bash ]; then
     . ~/.bash/git-completion.bash
