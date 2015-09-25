@@ -84,4 +84,3 @@ export PS1="$VIRT_PS1\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]\$(__g
 # ls colors
 alias ls='ls --color=auto'
 
-export BOTO_CONFIG=~/.aws/config
