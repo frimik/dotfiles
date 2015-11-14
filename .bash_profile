@@ -22,10 +22,15 @@ if [ -d "$HOME/.rbenv/bin" ]; then
   eval "$(rbenv init -)"
 fi
 
-# Python userbase:
+# Python userbase setup:
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
   export PATH
+fi
+
+if [ -d "$HOME/.local/lib/python2.6" ]; then
+  PYTHONPATH="$HOME/.local/lib/python2.6"
+  export PYTHONPATH
 fi
 
 # my bin dir:
