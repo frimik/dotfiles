@@ -7,12 +7,6 @@ fi
 
 # User specific environment and startup programs
 
-# my bin dir:
-if [ -d "$HOME/bin/" ]; then
-  PATH="$HOME/bin:$PATH"
-  export PATH
-fi
-
 # my go bin dir:
 if [ -d "$GOPATH/bin/" ]; then
   PATH="$GOPATH/bin:$PATH"
@@ -26,6 +20,18 @@ if [ -d "$HOME/.rbenv/bin" ]; then
 
   # Initiate rbenv
   eval "$(rbenv init -)"
+fi
+
+# Python userbase:
+if [ -d "$HOME/.local/bin" ]; then
+  PATH="$HOME/.local/bin:$PATH"
+  export PATH
+fi
+
+# my bin dir:
+if [ -d "$HOME/bin/" ]; then
+  PATH="$HOME/bin:$PATH"
+  export PATH
 fi
 
 export EDITOR="vim"
