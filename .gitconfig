@@ -4,7 +4,7 @@
 	email = mfridh@ea.com
 	name = Mikael Fridh
 [core]
-	autocrlf = true
+	autocrlf = input
 [push]
 	default = simple
 [merge]

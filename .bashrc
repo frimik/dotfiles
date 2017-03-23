@@ -79,3 +79,5 @@ alias ls='ls --color=auto'
 
 # use Putty for git (requires putty in windows path...)
 export GIT_SSH=plink
+
+export GOPATH="${HOME}/.go"
